@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClassSchedule.Models
 {
@@ -20,6 +22,7 @@ namespace ClassSchedule.Models
         [Required(ErrorMessage = "Please enter a class time (in military time format).")]
         public string MilitaryTime { get; set; }
 
+        
         public int TeacherId { get; set; }                  // Foreign key property
         public Teacher Teacher { get; set; }                // Navigation property
 

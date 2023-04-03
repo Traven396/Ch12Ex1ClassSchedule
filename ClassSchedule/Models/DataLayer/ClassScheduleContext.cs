@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ClassSchedule.Models
 {
@@ -17,6 +19,7 @@ namespace ClassSchedule.Models
             modelBuilder.ApplyConfiguration(new DayConfig());
             modelBuilder.ApplyConfiguration(new TeacherConfig());
             modelBuilder.ApplyConfiguration(new ClassConfig());
+
         }
 
     }
